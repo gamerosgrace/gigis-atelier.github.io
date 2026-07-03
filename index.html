@@ -264,32 +264,41 @@
         </div>
       </div>
 
-      <form class="fade-up" id="contact-form">
-        <div class="field">
-          <label for="f-name">Name</label>
-          <input id="f-name" type="text" placeholder="Your name" required>
-        </div>
-        <div class="field">
-          <label for="f-email">Email</label>
-          <input id="f-email" type="email" placeholder="you@company.com" required>
-        </div>
-        <div class="field">
-          <label for="f-type">Project type</label>
-          <select id="f-type">
-            <option>Brand Identity</option>
-            <option>Packaging Design</option>
-            <option>Product Labels</option>
-            <option>Marketing Design</option>
-            <option>Digital Products</option>
-            <option>Printable Designs</option>
-            <option>Custom Project</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-msg">Project details</label>
-          <textarea id="f-msg" rows="4" placeholder="A little about your brand, timeline, and goals" required></textarea>
-        </div>
-        <button type="submit" class="btn solid">Send inquiry <span class="btn-arrow">→</span></button>
+ <form class="fade-up" id="contact-form" action="https://formspree.io/f/mykqlprk" method="POST">
+
+  <div class="field">
+    <label for="f-name">Name</label>
+    <input id="f-name" name="name" type="text" placeholder="Your name" required>
+  </div>
+
+  <div class="field">
+    <label for="f-email">Email</label>
+    <input id="f-email" name="email" type="email" placeholder="you@company.com" required>
+  </div>
+
+  <div class="field">
+    <label for="f-type">Project type</label>
+    <select id="f-type" name="project_type">
+      <option>Brand Identity</option>
+      <option>Packaging Design</option>
+      <option>Product Labels</option>
+      <option>Marketing Design</option>
+      <option>Digital Products</option>
+      <option>Printable Designs</option>
+      <option>Custom Project</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="f-msg">Project details</label>
+    <textarea id="f-msg" name="message" rows="4" placeholder="A little about your brand, timeline, and goals" required></textarea>
+  </div>
+
+  <button type="submit" class="btn solid">
+    Send inquiry <span class="btn-arrow">→</span>
+  </button>
+
+</form>
         <p class="form-note" id="form-note">Thank you — this is a design prototype, so the form isn't wired up yet. Reach us directly at gigisatelierr@gmail.com.</p>
       </form>
     </div>
